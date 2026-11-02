@@ -39,8 +39,16 @@ public class BMIController {
     @FXML
     private void handleHitungBmi(ActionEvent event) {
         try {
-            String nama = txtNama.getText().trim().isEmpty() ? "Teman" : txtNama.getText().trim();
-            String gender = rbPria.isSelected() ? "Pria" : "Wanita";
+            String nama = txtNama.getText();
+            if (nama.isEmpty()) {
+                  nama = "User";
+               }
+
+            String gender = "Pria";
+            if (rbWanita.isSelected()) {
+                  gender = "Wanita";
+               }
+           
             double berat = Double.parseDouble(txtBerat.getText());
             double tinggi = Double.parseDouble(txtTinggi.getText());
 

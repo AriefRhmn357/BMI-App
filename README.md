@@ -18,10 +18,11 @@
 ## 🖼️ Tampilan Antarmuka (UI Preview)
 
 | Halaman Utama (`home.fxml`) | Halaman Kalkulator (`form-bmi.fxml`) | Hasil Perhitungan BMI |
-| :---: | :---: | :---: |
+| <img width="287" height="361" alt="image" src="https://github.com/user-attachments/assets/58507b9b-c5f4-47bf-8f6b-f72c1d50ec89" />
+ | <img width="287" height="413" alt="image" src="https://github.com/user-attachments/assets/b283ae8d-c8d9-4119-bff8-4b614705874d" />
+ | <img width="287" height="413" alt="image" src="https://github.com/user-attachments/assets/4e3509be-cd5e-4c36-abcd-528f9865679c" />
+ |
 |  |  |  |
-
-> **Catatan**: Jika mengedit langsung di GitHub Web, Anda cukup melakukan *screenshot* aplikasi (`Win + Shift + S`) lalu *paste* (`Ctrl + V`) gambarnya langsung di bagian tabel di atas.
 
 ## 📐 Klasifikasi Kategori BMI
 
@@ -62,6 +63,6 @@ Project ini menerapkan prinsip **Satu Scene Satu Controller** dan memisahkan log
 
 ## 👤 Identitas Pengembang
 
-- **Nama**: [Isi Nama Lengkap Anda]
-- **NIM**: [Isi NIM Anda]
-- **Kelas / Mata Kuliah**: Algoritma dan Pemrograman
+- **Nama**: Arief Rahman Prasetyo
+- **NIM**: 2506048
+- **Kelas / Mata Kuliah**: 3A / Algoritma dan Pemrograman

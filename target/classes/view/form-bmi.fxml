@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="TOP_CENTER" prefHeight="520.0" prefWidth="380.0" spacing="12.0" style="-fx-background-color: #F0F7FF;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.BMIController">
+   <padding>
+      <Insets bottom="20.0" left="25.0" right="25.0" top="20.0" />
+   </padding>
+   <children>
+      <Label text="KALKULATOR BMI" textFill="#1a365d">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtNama" promptText="Masukkan Nama Anda" style="-fx-background-radius: 8; -fx-padding: 8;" />
+      <HBox alignment="CENTER" spacing="25.0">
+         <children>
+            <RadioButton fx:id="rbPria" selected="true" text="Pria">
+               <toggleGroup>
+                  <ToggleGroup fx:id="grupGender" />
+               </toggleGroup>
+            </RadioButton>
+            <RadioButton fx:id="rbWanita" text="Wanita" toggleGroup="$grupGender" />
+         </children>
+      </HBox>
+      <TextField fx:id="txtBerat" promptText="Berat Badan (kg) - contoh: 60" style="-fx-background-radius: 8; -fx-padding: 8;" />
+      <TextField fx:id="txtTinggi" promptText="Tinggi Badan (cm) - contoh: 170" style="-fx-background-radius: 8; -fx-padding: 8;" />
+      <HBox alignment="CENTER" spacing="10.0">
+         <children>
+            <Button onAction="#handleHitungBmi" prefHeight="36.0" prefWidth="200.0" style="-fx-background-color: #3182CE; -fx-text-fill: white; -fx-background-radius: 8; -fx-font-weight: bold;" text="Hitung BMI" />
+            <Button onAction="#handleReset" prefHeight="36.0" prefWidth="110.0" style="-fx-background-color: #E2E8F0; -fx-text-fill: #2D3748; -fx-background-radius: 8; -fx-font-weight: bold;" text="Reset" />
+         </children>
+      </HBox>
+      <VBox fx:id="boxHasil" alignment="CENTER" spacing="6.0" style="-fx-background-color: #FFFFFF; -fx-background-radius: 12; -fx-padding: 15; -fx-border-color: #CBD5E0; -fx-border-radius: 12;">
+         <children>
+            <Label fx:id="lblEmoji" text="😊">
+               <font>
+                  <Font size="32.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblHasilBmi" text="Nilai BMI: -" textFill="#2d3748">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblKategori" text="Kategori: -" textFill="#4a5568">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblIdeal" text="Berat Ideal: -" textFill="#4a5568" />
+            <Label fx:id="lblSaran" alignment="CENTER" text="Silakan masukkan data Anda di atas." textAlignment="CENTER" textFill="#718096" wrapText="true" />
+         </children>
+      </VBox>
+      <Button onAction="#kembaliKeHome" style="-fx-background-color: transparent; -fx-text-fill: #3182CE; -fx-underline: true;" text="⬅ Kembali ke Halaman Utama" />
+   </children>
+</VBox>
